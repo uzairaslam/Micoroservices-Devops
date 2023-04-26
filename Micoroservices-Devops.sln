@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shopping", "Shopping", "{5AC9DC8B-5F2A-4C72-9377-0720CD2EB148}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping.Client", "Shopping\Shopping.Clinet\Shopping.Client.csproj", "{CEC67D45-55C1-44E5-9CCB-5DD79890F0D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEC67D45-55C1-44E5-9CCB-5DD79890F0D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC67D45-55C1-44E5-9CCB-5DD79890F0D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC67D45-55C1-44E5-9CCB-5DD79890F0D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC67D45-55C1-44E5-9CCB-5DD79890F0D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1DABA50-38A1-4C86-BCC8-1CE7C8B8B6B6}
+	EndGlobalSection
+EndGlobal
