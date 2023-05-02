@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shopping", "Shopping", "{5AC9DC8B-5F2A-4C72-9377-0720CD2EB148}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping.Client", "Shopping\Shopping.Clinet\Shopping.Client.csproj", "{CEC67D45-55C1-44E5-9CCB-5DD79890F0D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping.Client", "Shopping\Shopping.Clinet\Shopping.Client.csproj", "{A197AA20-4C0C-4439-B2FC-78D1CCF9E35A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CEC67D45-55C1-44E5-9CCB-5DD79890F0D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CEC67D45-55C1-44E5-9CCB-5DD79890F0D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CEC67D45-55C1-44E5-9CCB-5DD79890F0D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CEC67D45-55C1-44E5-9CCB-5DD79890F0D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A197AA20-4C0C-4439-B2FC-78D1CCF9E35A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A197AA20-4C0C-4439-B2FC-78D1CCF9E35A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A197AA20-4C0C-4439-B2FC-78D1CCF9E35A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A197AA20-4C0C-4439-B2FC-78D1CCF9E35A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

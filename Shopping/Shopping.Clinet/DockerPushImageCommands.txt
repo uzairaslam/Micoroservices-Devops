@@ -1,0 +1,10 @@
+﻿//Login to docker hub using developer powershell
+>docker login //provide username and password
+
+//tagging docker image with repository name
+docker tag <image id> <repository name>
+docker tag 6a27 uzairaslam/shoppingapp
+
+//push tagged imaged to docker hub
+docker push <Repository>:<tag>
+docker push uzairaslam/shoppingapp:latest

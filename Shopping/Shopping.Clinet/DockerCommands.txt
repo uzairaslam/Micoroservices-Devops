@@ -1,0 +1,31 @@
+﻿//Docker images
+docker images
+
+//remove image
+docker rmi <image id>
+
+//check running containers
+docker ps
+
+//check all containers
+docker ps -a
+
+//stop tunning container
+docker stop <container id>
+
+//remove container
+docker rm <container id>
+
+//docker build operations
+docker build -t shoppingapp .
+
+docker run -d -p 8080:80 --name myapp shoppingclient
+
+//remove all containers
+docker rm -f $(docker ps -a -q)
+
+//remove all images
+docker image rm $(docker images -q)  
+
+//remove all unused containers, networks, images, and volumes
+docker system prune  /
