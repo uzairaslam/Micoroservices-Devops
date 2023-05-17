@@ -1,10 +1,32 @@
-﻿using Shopping.API.Models;
+﻿using MongoDB.Driver;
+using Shopping.API.Models;
 
 namespace Shopping.API.Data
 {
-    public static class ProductContext
+    public class ProductContext
     {
-        public static readonly List<Product> Products = new List<Product>
+        public ProductContext(IConfiguration configuration)
+        {
+            var client = new MongoClient(configuration["DatabaseSettings:ConnectionString"]);
+            var database = client.GetDatabase(configuration["DatabaseSettings:DatabaseName"]);
+
+            products = database.GetCollection<Product>(configuration["DatabaseSettings:CollectionName"]);
+            SeedData(products);
+        }
+
+
+        public IMongoCollection<Product> products { get; }
+
+        private void SeedData(IMongoCollection<Product> productCollection)
+        {
+            bool existProducts = productCollection.Find(p => true).Any();
+            if (!existProducts)
+                productCollection.InsertMany(GetpreConfiguredProducts());
+        }
+
+        private IEnumerable<Product> GetpreConfiguredProducts()
+        {
+            return new List<Product>
         {
             new Product()
                 {
@@ -55,5 +77,6 @@ namespace Shopping.API.Data
                     Category = "Home Kitchen"
                 }
         };
+        }
     }
 }
